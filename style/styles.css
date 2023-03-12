@@ -1,0 +1,54 @@
+/*!не работает шрифт */
+@font-face {
+    font-family: GoogleSans;
+    src: url(fonts/googlesans_regular.ttf);
+}
+@font-face {
+    font-family: Noteworthy;
+    src: url(fonts/noteworthy.ttf);
+}
+/*!не работает шрифт */
+:root {
+    --mainLightColor: #F3F6FB;
+    --backgroundColor: #3E3E3E;
+    --mainDarkColor: #404B55;
+    --mainDarkBlueColor: #97B1C2;
+    --secondLightColor: #CCD9E2;
+}
+*{
+    border: 0;
+    margin: 0;
+}
+@media screen and (min-width: 1125px){
+    body {
+        margin: 0 auto;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: nowrap;
+        align-items: center;
+        order: 2;
+    }
+    nav {
+        height: 148.8px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #logoContainer {
+        width: 30%;
+        background-color: var(--mainLightColor);
+
+    }
+    #navContainer{
+        width: 70%;
+        background-color: var(--mainDarkBlueColor);
+    }
+    p {
+        font-family: Google_sans, Arial, Helvetica, sans-serif;
+    }
+}
+body{
+    background-color: var(--backgroundColor);
+}
