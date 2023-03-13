@@ -1,13 +1,14 @@
-/*!не работает шрифт */
+/*!Жирное начертание испльзовать через отдельный шрифт "GoogleSansBold"*/
 @font-face {
     font-family: GoogleSans;
-    src: url(fonts/googlesans_regular.ttf);
+    src: url(../fonts/GoogleSans-Regular.ttf);
 }
+
 @font-face {
-    font-family: Noteworthy;
-    src: url(fonts/noteworthy.ttf);
+    font-family: GoogleSansBold;
+    src: url(../fonts/GoogleSans-Bold.ttf);
 }
-/*!не работает шрифт */
+
 :root {
     --mainLightColor: #F3F6FB;
     --backgroundColor: #3E3E3E;
@@ -18,6 +19,12 @@
 *{
     border: 0;
     margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: GoogleSansBold;
+}
+p {
+    font-family: GoogleSans;
 }
 @media screen and (min-width: 1125px){
     body {
@@ -44,9 +51,6 @@
     #navContainer{
         width: 70%;
         background-color: var(--mainDarkBlueColor);
-    }
-    p {
-        font-family: Google_sans, Arial, Helvetica, sans-serif;
     }
 }
 body{
