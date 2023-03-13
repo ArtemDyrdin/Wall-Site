@@ -21,10 +21,10 @@
     margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: GoogleSansBold;
+    font-family: GoogleSansBold, serif;
 }
 p {
-    font-family: GoogleSans;
+    font-family: GoogleSans, serif;
 }
 @media screen and (min-width: 1125px){
     body {
@@ -38,7 +38,7 @@ p {
         order: 2;
     }
     nav {
-        height: 148.8px;
+        height: 149px;
         width: 100%;
         display: flex;
         flex-direction: row;
