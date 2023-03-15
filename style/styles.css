@@ -28,8 +28,8 @@ p {
 }
 @media screen and (min-width: 1125px){
     body {
-        margin: 0 auto;
-        width: 98%;
+        margin: 0 20px 0 20px;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -44,15 +44,25 @@ p {
         flex-direction: row;
     }
     #logoContainer {
-        width: 30%;
+        width: auto;
         background-color: var(--mainLightColor);
-
+    }
+    #bigLogo {
+        max-height: 149px;
     }
     #navContainer{
-        width: 70%;
+        width: 100%;
         background-color: var(--mainDarkBlueColor);
+    }
+    main {
+        margin-top: 20px;
+        width: 100%;
+        height: 500px;
     }
 }
 body{
     background-color: var(--backgroundColor);
+}
+main {
+    background-color: var(--mainLightColor);
 }
