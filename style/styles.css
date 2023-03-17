@@ -44,11 +44,26 @@ p {
         flex-direction: row;
     }
     #logoContainer {
-        width: auto;
         background-color: var(--mainLightColor);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex: 0 0 460px;
     }
-    #bigLogo {
-        max-height: 149px;
+    #logoContainer h1 {
+        height: 110px;
+        font-size: 98px;
+
+        margin: auto 20px auto 0;
+        color: var(--mainDarkColor);
+    }
+    #logoContainer h4 {
+        color: var(--mainDarkColor);
+    }
+    #logoContainer img {
+        margin: 7px 0 0 20px;
+        width: 121px;
+        height: 109px;
     }
     #navContainer{
         width: 100%;
@@ -123,13 +138,13 @@ p {
         color: var(--mainDarkColor);
         text-decoration: none;
         display: block;
-        width: 270px;
     }
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
         transition: color 0.4s;
-        width: 270px;
-        font-size: 30px;
+        width: 315px;
+        padding: 10px 0;
+        font-size: 35px;
     }
     #mainPoints ul a li:hover {
         color: var(--mainDarkBlueColor);
@@ -139,6 +154,18 @@ p {
     }
     #rightMainPointsBlock img {
         width: 100%;
+    }
+}
+@media screen and (max-width: 490px){
+    body {
+        margin: 0 10px;
+        /*width: auto;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: start;*/
+        /*flex-wrap: nowrap;*/
+        /*align-items: center;*/
+        /*order: 2;*/
     }
 }
 body{
