@@ -1,0 +1,54 @@
+@media screen and (min-width: 1125px){
+    .chapter1 {
+        margin-top: 30px !important;
+    }
+    .chapter2 {
+        margin-top: 30px !important;
+    }
+    .textImageContainer {
+        margin: 20px auto 30px auto;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .textImageContainer p {
+        color: var(--mainDarkColor);
+        text-align: justify;
+        width: 60%;
+        font-size: 28px;
+    }
+    .textImageContainer img {
+        width: 35%;
+        object-fit: contain;
+    }
+    .imageAndSmallPS {
+        width: 35%;
+    }
+    .imageAndSmallPS p {
+        color: var(--mainDarkBlueColor);
+        width: 90%;
+        text-align: center;
+        font-size: 20px;
+        margin: 10px auto 0 auto;
+    }
+    .textImageContainer .imageAndSmallPS img {
+        width: 100%;
+    }
+    .chapter3 {
+        border-radius: 10px;
+        margin-top: 30px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--mainDarkBlueColor);
+    }
+    .header3 {
+        font-size: 30px;
+        color: var(--mainLightColor);
+        width: 95%;
+        text-align: center;
+    }
+}
