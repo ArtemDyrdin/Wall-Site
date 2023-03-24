@@ -1,18 +1,18 @@
 /*!Жирное начертание испльзовать через отдельный шрифт "GoogleSansBold"*/
 @font-face {
     font-family: GoogleSans;
-    src: url(fonts/GoogleSans-Regular.ttf);
+    src: url(/GoogleSans-Regular.ttf);
 }
 
 @font-face {
     font-family: GoogleSansBold;
-    src: url(fonts/GoogleSans-Bold.ttf);
+    src: url(/GoogleSans-Bold.ttf);
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: GoogleSansBold, serif;
+    font-family: GoogleSansBold, sans-serif;
 }
 p {
-    font-family: GoogleSans, serif;
+    font-family: GoogleSans, sans-serif;
 }
 
 :root {
@@ -27,7 +27,7 @@ p {
     margin: 0;
 }
 
-@media screen and (min-width: 1125px){
+@media screen and (min-width: 1200px){
     body {
         margin: 0 20px 0 20px;
         width: auto;
@@ -76,8 +76,8 @@ p {
     }
     .inMainContainer {
         width: 96%;
-        margin: 0 auto 20px auto;
-        min-height: 120px;
+        margin: 0 auto 30px auto;
+
     }
     .inContainerBlock {
         margin: 20px auto 0 auto;
@@ -142,7 +142,7 @@ p {
     }
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
-        transition: color 0.4s;
+        transition: color 0.6s;
         width: 315px;
         padding: 10px 0;
         font-size: 35px;
