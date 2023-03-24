@@ -1,4 +1,4 @@
-@media screen and (min-width: 1125px){
+@media screen and (min-width: 1200px){
     .chapter1 {
         margin-top: 30px !important;
     }
@@ -16,7 +16,7 @@
         color: var(--mainDarkColor);
         text-align: justify;
         width: 60%;
-        font-size: 28px;
+        font-size: 25px;
     }
     .textImageContainer img {
         width: 35%;
@@ -51,4 +51,37 @@
         width: 95%;
         text-align: center;
     }
+    .listContainer {
+        margin: 30px auto 0 auto;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+    }
+    .inListContainerBlock {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .inListContainerBlock a {
+        margin: 20px 0 0 0;
+        text-decoration: none;
+    }
+    .anomalyContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .anomalyContainer h3 {
+        transition: color 0.6s;
+        vertical-align: center;
+        margin: auto 20px auto 0;
+        font-size: 34px;
+        /*height: 68px;*/
+        text-align: center;
+        color: var(--mainDarkColor);
+    }
+    .inListContainerBlock a:hover  .anomalyContainer h3 {
+        color: var(--mainDarkBlueColor);
+    }
+
 }
