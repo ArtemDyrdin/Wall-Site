@@ -1,12 +1,12 @@
 /*!Жирное начертание испльзовать через отдельный шрифт "GoogleSansBold"*/
 @font-face {
     font-family: GoogleSans;
-    src: url(/GoogleSans-Regular.ttf);
+    src: url(GoogleSans-Regular.ttf);
 }
 
 @font-face {
     font-family: GoogleSansBold;
-    src: url(/GoogleSans-Bold.ttf);
+    src: url(GoogleSans-Bold.ttf);
 }
 h1, h2, h3, h4, h5, h6{
     font-family: GoogleSansBold, sans-serif;
