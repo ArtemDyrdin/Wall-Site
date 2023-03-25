@@ -72,9 +72,78 @@ main {
         width: 121px;
         height: 109px;
     }
-    #navContainer{
+    #navContainer {
         width: 100%;
         background-color: var(--mainDarkBlueColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navContainerTop {
+        margin-top: 5px;
+        width: calc(100% - 60px);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .navContainerTop h1 {
+        font-size: 50px;
+        margin: 0 10px 0 0;
+        color: var(--mainLightColor);
+    }
+    #border {
+        width: 1px;
+        height: 100%;
+        border-right: 2px solid var(--mainLightColor);
+    }
+    .navContainerTop h2 {
+        color: var(--mainLightColor);
+        margin: 5px 0 0 10px;
+    }
+    .navContainerBottom {
+        width: calc(100% - 60px);
+        margin-bottom: 5px;
+        min-height: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .navContainerBottom a {
+        width: 21%;
+        text-decoration: none;
+    }
+    .navBlockBottom {
+        transition: background-color 0.6s;
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--mainLightColor);
+        border-radius: 8px;
+    }
+    .navBlockBottom:hover {
+        transition: background-color 0.6s;
+        background-color: var(--secondLightColor);
+    }
+    .navBlockBottom:hover h3 {
+        transition: color 0.6s;
+        color: var(--mainDarkColor);
+    }
+    .navBlockBottom h3 {
+        text-align: center;
+        transition: color 0.6s;
+        color: var(--mainDarkColor);
+        font-size: 22px;
+        margin: 5px 15px;
+    }
+    .currentPage {
+        background-color: var(--mainDarkColor);
+    }
+    .currentPage h3{
+        color: var(--mainLightColor);
     }
 
     main {
