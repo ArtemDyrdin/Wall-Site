@@ -5,10 +5,10 @@ function getCurrentPage() {
     if (currentPathname.indexOf("anomalies") > -1) {
         return "anomalies";
     }
-    if (currentPathname.indexOf("scientists") > -1) {
+    if (currentPathname.indexOf("professors") > -1) {
         return "scientists";
     }
-    if (currentPathname.indexOf("victims") > -1) {
+    if (currentPathname.indexOf("develop") > -1) {
         return "victims";
     }
     return "main";
