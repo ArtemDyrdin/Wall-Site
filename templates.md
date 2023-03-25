@@ -2,7 +2,7 @@
 ```html
 <nav>
     <div id="logoContainer">
-        <img src="/data/logo.png" alt="Логотип">
+        <img src="data/logo.png" alt="Логотип">
         <h1>
             Б.Ф.У
         </h1>
