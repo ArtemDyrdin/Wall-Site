@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="data/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#3E3E3E">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жертвы сайта</title>
+    <style>
+        @media screen and (min-width: 1200px)  {
+            body {
+                margin: 0 0 0 0;
+            }
+            nav {
+                width: calc(100% - 40px);
+                margin: 0 auto ;
+            }
+            main {
+                background-color: var(--backgroundColor);
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+            .unhappy {
+                margin-top: 40px;
+                width: 90%;
+            }
+
+            .unhappyTop h2{
+                color: var(--mainLightColor);
+                font-size: 50px;
+                margin-left: 50px;
+            }
+            .unhappyUnderline {
+                border-bottom: 1px solid var(--mainLightColor);
+                width: 100%;
+                height: 1px;
+            }
+            .unhappyBottom {
+                margin-top: 30px;
+                margin-left: 50px;
+            }
+            .unhappyBottom p {
+                font-size: 35px;
+                color: var(--mainLightColor);
+            }
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div id="logoContainer">
+        <img src="/data/logo.png" alt="Логотип">
+        <h1>
+            Б.Ф.У
+        </h1>
+        <h4>
+            Безопасность. Фиксация. Удержание
+        </h4>
+    </div>
+    <div id="navContainer">
+
+    </div>
+</nav>
+<main>
+    <div class="unhappy">
+        <div class="unhappyTop">
+            <h2>
+                Разработчики
+            </h2>
+            <div class="unhappyUnderline"></div>
+        </div>
+        <div class="unhappyBottom">
+            <p>
+                Кирилл Саркисов скрепка
+            </p>
+            <p>
+                Артём Дырдин перец
+            </p>
+        </div>
+    </div>
+    <div class="unhappy">
+        <div class="unhappyTop">
+            <h2>
+                Дизайнеры
+            </h2>
+            <div class="unhappyUnderline"></div>
+        </div>
+        <div class="unhappyBottom">
+            <p>
+                Софья Романко корица
+            </p>
+            <p>
+                Саша Моисеева сарделька
+            </p>
+        </div>
+    </div>
+</main>
+</body>
+</html>
