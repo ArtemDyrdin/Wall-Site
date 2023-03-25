@@ -1,4 +1,4 @@
-Шаблон навигации (нет меню)
+Шаблон навигации 
 ```html
 <nav>
     <div id="logoContainer">
@@ -11,9 +11,46 @@
         </h4>
     </div>
     <div id="navContainer">
-
+        <div class="navContainerTop">
+            <h1 id="pageName"></h1>
+            <div id="border"></div>
+            <h2 id="pageDescription"></h2>
+        </div>
+        <div class="navContainerBottom">
+            <a href="main.html">
+                <div class="navBlockBottom">
+                    <h3>
+                        Главная
+                    </h3>
+                </div>
+            </a>
+            <a href="anomaliesList.html">
+                <div class="navBlockBottom">
+                    <h3>
+                        Аномалии
+                    </h3>
+                </div>
+            </a>
+            <a href="professors.html">
+                <div class="navBlockBottom">
+                    <h3>
+                        Учёные
+                    </h3>
+                </div>
+            </a>
+            <a href="develop.html">
+                <div class="navBlockBottom">
+                    <h3>
+                        Жертвы сайты
+                    </h3>
+                </div>
+            </a>
+        </div>
     </div>
 </nav>
+```
+```html
+<script src="header.js"></script>
 ```
 Шаблоны блоков с заголовками первого и второго уровней:
 ```html
