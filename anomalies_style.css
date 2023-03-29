@@ -66,5 +66,89 @@
     .inListContainerBlock a:hover  .anomalyContainer h3 {
         color: var(--mainDarkBlueColor);
     }
+}
+@media screen and (max-width: 490px) {
+    .chapter2 {
+        width: calc(100% + 30px);
+        margin-top: 20px !important;
+        left: -15px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondLightColor);
+    }
+    .header2 {
+        font-size: 28px;
+        text-align: center;
+        color: var(--mainDarkColor);
+        margin: 4px auto;
+    }
+    .textImageContainer p {
+        margin: 15px 0;
+        font-size: 20px;
+        text-align: justify;
+    }
+    /*.imageAndSmallPS {*/
+    /*    width: 35%;*/
+    /*}*/
+    .imageAndSmallPS p {
+        color: var(--mainDarkBlueColor) !important;
+        width: 100% !important;
+        text-align: center !important;
+        font-size: 15px !important;
+        margin: 10px auto 10px auto !important;
+    }
+    .textImageContainer .imageAndSmallPS img, .textImageContainer img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .chapter3 {
+        display: none;
+    }
+    .listContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .inListContainerBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .inListContainerBlock a {
+        -webkit-tap-highlight-color: transparent;
+        width: 100%;
+        text-decoration: none;
+        margin-top: 25px;
+    }
+    .inListContainerBlock a:active .anomalyContainer{
+        /*text-decoration-color: var(--mainDarkColor);*/
+        background-color: var(--secondLightColor);
+    }
 
+    .inListContainerBlock a:active .anomalyContainer h3 {
+        text-decoration: underline;
+
+    }
+
+    .anomalyContainer {
+        transition: background-color 0.2s;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px 0 0 10px;
+    }
+    .anomalyContainer img {
+        width: 20%;
+        object-fit: contain;
+    }
+    .anomalyContainer h3 {
+        transition: text-decoration 2s;
+        vertical-align: center;
+        width: calc(80% - 10px);
+        margin: auto 0 auto 0;
+        text-align: center;
+        color: var(--mainDarkColor);
+    }
 }

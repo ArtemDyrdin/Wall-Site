@@ -48,6 +48,44 @@
                 color: var(--mainLightColor);
             }
         }
+        @media screen and (max-width: 490px) {
+            main {
+                background-color: var(--backgroundColor);
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+            }
+            .unhappy {
+                margin-top: 40px;
+                width: 100%;
+            }
+
+            .unhappyTop h2{
+                color: var(--mainLightColor);
+                font-size: 38px;
+                margin: 0 auto;
+                text-align: center;
+                /*margin-left: 50px;*/
+            }
+            .unhappyUnderline {
+                border-bottom: 1px solid var(--mainLightColor);
+                width: calc(100% + 14px);
+                position: relative;
+                left: -7px;
+                height: 1px;
+            }
+            .unhappyBottom {
+                margin-top: 30px;
+                width: 100%;
+                text-align: center;
+                /*margin-left: 50px;*/
+            }
+            .unhappyBottom p {
+                font-size: 25px;
+                color: var(--mainLightColor);
+            }
+        }
     </style>
 </head>
 <body>
@@ -64,19 +102,20 @@
     <div id="navContainer">
         <div class="navContainerTop">
             <h1 id="pageName"></h1>
+            <img id="menuIcon" src="data/menuIcon.png" alt="Иконка меню" onclick="menuClick()">
             <div id="border"></div>
             <h2 id="pageDescription"></h2>
         </div>
         <div class="navContainerBottom">
             <a href="main.html">
-                <div class="navBlockBottom">
+                <div class="navBlockBottom firstPoint">
                     <h3>
                         Главная
                     </h3>
                 </div>
             </a>
             <a href="anomaliesList.html">
-                <div class="navBlockBottom">
+                <div class="navBlockBottom anotherBackground">
                     <h3>
                         Аномалии
                     </h3>
@@ -90,9 +129,9 @@
                 </div>
             </a>
             <a href="develop.html">
-                <div class="navBlockBottom">
+                <div class="navBlockBottom lastPoint anotherBackground">
                     <h3>
-                        Жертвы сайты
+                        Жертвы сайта
                     </h3>
                 </div>
             </a>
@@ -109,7 +148,7 @@
         </div>
         <div class="unhappyBottom">
             <p>
-                Кирилл Саркисов скрепка
+                Кирилл Саркисов кактусик
             </p>
             <p>
                 Артём Дырдин перец

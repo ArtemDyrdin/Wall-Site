@@ -13,19 +13,20 @@
     <div id="navContainer">
         <div class="navContainerTop">
             <h1 id="pageName"></h1>
+            <img id="menuIcon" src="data/menuIcon.png" alt="Иконка меню" onclick="menuClick()">
             <div id="border"></div>
             <h2 id="pageDescription"></h2>
         </div>
         <div class="navContainerBottom">
             <a href="main.html">
-                <div class="navBlockBottom">
+                <div class="navBlockBottom firstPoint">
                     <h3>
                         Главная
                     </h3>
                 </div>
             </a>
             <a href="anomaliesList.html">
-                <div class="navBlockBottom">
+                <div class="navBlockBottom anotherBackground">
                     <h3>
                         Аномалии
                     </h3>
@@ -39,9 +40,9 @@
                 </div>
             </a>
             <a href="develop.html">
-                <div class="navBlockBottom">
+                <div class="navBlockBottom lastPoint anotherBackground">
                     <h3>
-                        Жертвы сайты
+                        Жертвы сайта
                     </h3>
                 </div>
             </a>
