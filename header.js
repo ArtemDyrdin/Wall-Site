@@ -1,4 +1,4 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", () => {
     const path = window.location.pathname;
     const elementsArray = document.getElementsByClassName("navBlockBottom");
     const pageName = document.getElementById("pageName");
@@ -20,7 +20,7 @@ window.onload = function() {
         pageName.innerText = "Жертвы";
         pageDescription.innerText = "Те, кто пыхтел над сайтом";
     }
-}
+});
 function menuClick() {
     const currentClassName = document.getElementsByClassName("navContainerBottom")[0].className;
     if (currentClassName === "navContainerBottom closeMenu" || currentClassName === "navContainerBottom"){
