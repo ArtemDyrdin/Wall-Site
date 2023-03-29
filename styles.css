@@ -588,8 +588,8 @@ main {
         margin: 20px auto;
     }
     .professorHeader {
-        margin: 5px 0 10px 0;
-        width: 100%;
+        margin: 5px auto 10px auto;
+        width: 96%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -617,7 +617,7 @@ main {
     .professorHeader h1 {
         vertical-align: center;
         width: calc(100% - 110px);
-        text-align: center;
+        text-align: left;
         font-size: 23px;
         color: var(--mainDarkColor);
     }
