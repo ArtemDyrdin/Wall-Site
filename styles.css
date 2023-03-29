@@ -155,7 +155,7 @@ main {
         transition: height 1s;
     }
     .inMainContainer {
-        width: 96%;
+        width: 98%;
         margin: 0 auto 30px auto;
 
     }
@@ -306,7 +306,287 @@ main {
         transform: rotate(180deg);
     }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 1199px) and (min-width: 691px) {
+
+    body {
+        margin: 0 10px 0 10px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: nowrap;
+        align-items: center;
+        order: 2;
+    }
+    nav {
+        height: 120px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    #logoContainer {
+        background-color: var(--mainLightColor);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 300px;
+        align-content: center;
+    }
+    #menuIcon {
+        display: none;
+    }
+    #logoContainer h1 {
+        color: var(--mainDarkColor);
+        /*height: 110px;*/
+        font-size: 70px;
+        /*margin: auto 20px auto 0;*/
+    }
+    #logoContainer h4 {
+        color: var(--mainDarkColor);
+        font-size: 15px;
+        align-self: center;
+    }
+    #logoContainer img {
+        margin: 0 0 5px 0;
+        /*width: 121px;*/
+        object-fit: contain;
+        height: 80px;
+    }
+    #navContainer {
+        width: 100%;
+        background-color: var(--mainDarkBlueColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navContainerTop {
+        height: 95px;
+        width: calc(100% - 20px);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .navContainerTop h1 {
+        font-size: 30px;
+        margin: 0 10px 0 0;
+        color: var(--mainLightColor);
+    }
+    #border {
+        width: 1px;
+        height: 80%;
+        border-right: 2px solid var(--mainLightColor);
+    }
+    .navContainerTop h2 {
+        font-size: 20px;
+        color: var(--mainLightColor);
+        margin: 5px 0 0 10px;
+    }
+    .navContainerBottom {
+        width: calc(100% - 20px);
+        margin-bottom: 5px;
+        min-height: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .navContainerBottom a {
+        width: 21%;
+        text-decoration: none;
+    }
+    .navBlockBottom {
+        transition: background-color 0.6s;
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--mainLightColor);
+        border-radius: 8px;
+    }
+    .navBlockBottom:hover {
+        transition: background-color 0.6s;
+        background-color: var(--secondLightColor);
+    }
+    .navBlockBottom:hover h3 {
+        transition: color 0.6s;
+        color: var(--mainDarkColor);
+    }
+    .navBlockBottom h3 {
+        text-align: center;
+        transition: color 0.6s;
+        color: var(--mainDarkColor);
+        font-size: 15px;
+        margin: 5px 3px;
+    }
+    .currentPage {
+        background-color: var(--mainDarkColor);
+    }
+    .currentPage h3{
+        color: var(--mainLightColor);
+    }
+
+    main {
+        margin: 20px 20px 20px 20px;
+        width: 100%;
+        transition: height 1s;
+    }
+    .inMainContainer {
+        width: 95%;
+        margin: 0 auto 30px auto;
+
+    }
+    .inContainerBlock {
+        margin: 20px auto 0 auto;
+        width: 96%;
+    }
+    .inContainerBlock p {
+        color: var(--mainDarkColor);
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    .chapter1 {
+        margin: 40px auto 0 auto;
+        width: 100%;
+        /*height: 65px;*/
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--mainDarkBlueColor);
+    }
+    .header1 {
+        margin: 3px auto;
+        font-size: 45px;
+        width: auto;
+        text-align: center;
+        color: var(--mainLightColor);
+    }
+    .chapter2 {
+        margin: 20px auto 0 auto;
+        width: 100%;
+        height: 60px;
+        background-color: var(--secondLightColor);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header2 {
+        font-size: 40px;
+        text-align: center;
+        color: var(--mainDarkColor);
+    }
+
+    #BFU {
+        font-size: 45px;
+    }
+    #mainPoints {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+    #mainPoints h1, #mainPoints ul, #mainPoints ul a li{
+        color: var(--mainDarkColor);
+    }
+    #mainPoints h1 {
+        font-size: 55px;
+    }
+    #mainPoints ul a {
+        color: var(--mainDarkColor);
+        text-decoration: none;
+        display: block;
+    }
+    #mainPoints ul a li {
+        font-family: GoogleSansBold, sans-serif;
+        transition: color 0.6s;
+        width: 315px;
+        padding: 10px 0;
+        font-size: 35px;
+    }
+    #mainPoints ul a li:hover {
+        color: var(--mainDarkBlueColor);
+    }
+    #rightMainPointsBlock {
+        max-width: 45%;
+    }
+    #rightMainPointsBlock img {
+        width: 100%;
+    }
+
+    .textImageContainer {
+        margin: 20px auto 30px auto;
+        width: 98%;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .textImageContainer p {
+        color: var(--mainDarkColor);
+        text-align: justify;
+        width: 60%;
+        font-size: 25px;
+    }
+    .textImageContainer img {
+        width: 35%;
+        object-fit: contain;
+    }
+    .professorContainer {
+        width: 98%;
+        margin: 20px auto 0 auto;
+    }
+    .professorHeader {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .professorHeaderRight {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        cursor: pointer;
+    }
+    .professorHeaderRight img {
+        object-fit: contain;
+        height: 25px;
+        margin-left: 10px;
+    }
+    .professorHeader h1, .professorHeaderRight h4 {
+        color: var(--mainDarkColor);
+    }
+    .open {
+        overflow: hidden;
+        margin-bottom: 0;
+        transition: max-height 0.7s;
+        transition-timing-function: ease-in-out;
+        max-height: 1000px;
+
+    }
+    .close {
+        overflow: hidden;
+        transition: max-height 0.7s;
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out;
+        max-height: 0;
+    }
+    .closeMarker {
+        transition: transform 1s ease-in-out;
+        transform-origin: 50% 50%;
+        transform: rotate(0deg);
+    }
+    .openMarker {
+        transition: transform 1s ease-in-out;
+        transform-origin: 50% 50%;
+        transform: rotate(180deg);
+    }
+}
+@media screen and (max-width: 690px) {
     nav {
         width: 100%;
         display: flex;

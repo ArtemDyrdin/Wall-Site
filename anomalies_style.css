@@ -59,7 +59,6 @@
         vertical-align: center;
         margin: auto 20px auto 0;
         font-size: 34px;
-        /*height: 68px;*/
         text-align: center;
         color: var(--mainDarkColor);
     }
@@ -67,7 +66,79 @@
         color: var(--mainDarkBlueColor);
     }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 1199px) and (min-width: 691px) {
+    .chapter1 {
+        margin-top: 30px !important;
+    }
+    .chapter2 {
+        margin-top: 30px !important;
+    }
+    .imageAndSmallPS {
+        width: 35%;
+    }
+    .imageAndSmallPS p {
+        color: var(--mainDarkBlueColor) !important;
+        width: 90% !important;
+        text-align: center !important;
+        font-size: 17px !important;
+        margin: 10px auto 0 auto !important;
+    }
+    .textImageContainer .imageAndSmallPS img {
+        width: 100%;
+    }
+    .chapter3 {
+        border-radius: 10px;
+        margin-top: 30px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--mainDarkBlueColor);
+    }
+    .header3 {
+        font-size: 25px;
+        color: var(--mainLightColor);
+        width: 95%;
+        text-align: center;
+    }
+    .listContainer {
+        margin: 30px auto 0 auto;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .inListContainerBlock {
+        width: 46%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .inListContainerBlock a {
+        margin: 20px 0 0 0;
+        text-decoration: none;
+    }
+    .anomalyContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+    .anomalyContainer h3 {
+        transition: color 0.6s;
+        vertical-align: center;
+        margin: auto 10px auto 0;
+        font-size: 25px;
+        text-align: center;
+        color: var(--mainDarkColor);
+    }
+    .anomalyContainer img {
+        width: 100px;
+        object-fit: contain;
+    }
+    .inListContainerBlock a:hover  .anomalyContainer h3 {
+        color: var(--mainDarkBlueColor);
+    }
+}
+@media screen and (max-width: 690px) {
     .chapter2 {
         width: calc(100% + 30px);
         margin-top: 20px !important;
@@ -88,9 +159,6 @@
         font-size: 20px;
         text-align: justify;
     }
-    /*.imageAndSmallPS {*/
-    /*    width: 35%;*/
-    /*}*/
     .imageAndSmallPS p {
         color: var(--mainDarkBlueColor) !important;
         width: 100% !important;
@@ -112,6 +180,7 @@
         justify-content: start;
     }
     .inListContainerBlock {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -124,7 +193,6 @@
         margin-top: 25px;
     }
     .inListContainerBlock a:active .anomalyContainer{
-        /*text-decoration-color: var(--mainDarkColor);*/
         background-color: var(--secondLightColor);
     }
 
