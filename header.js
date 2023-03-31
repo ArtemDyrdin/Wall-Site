@@ -10,7 +10,21 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (path.indexOf("anomalies") >= 0) {
         elementsArray[1].className += " currentPage" ;
         pageName.innerText = "Аномалии";
-        pageDescription.innerText = "Классификация аномалий Фонда";
+        if (path.indexOf("infinite") >= 0) {
+            pageDescription.innerText = "Бесконечно большие";
+        }
+        else if (path.indexOf("limited") >= 0) {
+            pageDescription.innerText = "Ограниченные";
+        }
+        else if (path.indexOf("nothingness") >= 0) {
+            pageDescription.innerText = "Ничтожества";
+        }
+        else if (path.indexOf("undefined") >= 0) {
+            pageDescription.innerText = "Неопределенные";
+        }
+        else {
+            pageDescription.innerText = "Классификация аномалий Фонда";
+        }
     } else if (path.indexOf("professors") >= 0) {
         elementsArray[2].className += " currentPage" ;
         pageName.innerText = "Учёные";
