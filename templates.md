@@ -50,8 +50,10 @@
     </div>
 </nav>
 ```
+
 ```html
-<script src="header.js"></script>
+
+<script src="main.js"></script>
 ```
 Шаблоны блоков с заголовками первого и второго уровней:
 ```html
