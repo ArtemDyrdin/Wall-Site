@@ -7,7 +7,8 @@ document.addEventListener("DOMContentLoaded", () => {
         elementsArray[0].className += " currentPage";
         pageName.innerText = "Главная";
         pageDescription.innerText = "Основные детали и история учреждения";
-    } else if (path.indexOf("anomalies") >= 0) {
+    }
+    else if (path.indexOf("anomalies") >= 0) {
         elementsArray[1].className += " currentPage" ;
         pageName.innerText = "Аномалии";
         if (path.indexOf("infinite") >= 0) {
@@ -25,11 +26,13 @@ document.addEventListener("DOMContentLoaded", () => {
         else {
             pageDescription.innerText = "Классификация аномалий Фонда";
         }
-    } else if (path.indexOf("professors") >= 0) {
+    }
+    else if (path.indexOf("professors") >= 0) {
         elementsArray[2].className += " currentPage" ;
         pageName.innerText = "Учёные";
         pageDescription.innerText = "Сотрудники Фонда";
-    } else if (path.indexOf("develop") >= 0) {
+    }
+    else if (path.indexOf("develop") >= 0) {
         elementsArray[3].className += " currentPage" ;
         pageName.innerText = "Жертвы";
         pageDescription.innerText = "Те, кто пыхтел над сайтом";
