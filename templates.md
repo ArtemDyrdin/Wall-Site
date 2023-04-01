@@ -4,10 +4,10 @@
     <div id="logoContainer">
         <img src="data/logo.png" alt="Логотип">
         <h1>
-            Б.Ф.У
+            Б.Ф.У.
         </h1>
         <h4>
-            Безопасность. Фиксация. Удержание
+            Безопасность. Фиксация. Удержание.
         </h4>
     </div>
     <div id="navContainer">

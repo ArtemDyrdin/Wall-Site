@@ -17,16 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     let flag = false;
 
     const infinitePathArray = ["canteen", "musicalEquations", "stopPoint"];
-    const infiniteNameArray = ['B.F.U-154 "Столовая"', 'B.F.U-708 "Музыкальные уравнения"', 'B.F.U-101 "Точка остановы"'];
+    const infiniteNameArray = ['B.F.U.-154 "Столовая"', 'B.F.U.-708 "Музыкальные уравнения"', 'B.F.U.-101 "Точка остановы"'];
 
     const limitedPathArray = ["AI", "crib", "everPassingStudent", "ghosts", "informer", "orchid", "servers", "tableGame", "vendingMachine"];
-    const limitedNameArray = ['B.F.U-068 "Старый ИИ Миньон"', 'B.F.U-016 "Бесконечная шпаргалка"', 'B.F.U-001 "Вечно сдающий студент"', 'B.F.U-356 "Призраки ожидания"', 'B.F.U-144 "Стукач"', 'B.F.U-420 "Орхидея"', 'B.F.U-888 "Серверы"', 'B.F.U-080 "Та самая настольная игра"', 'B.F.U-019 "Торговый автомат"'];
+    const limitedNameArray = ['B.F.U.-068 "Старый ИИ Миньон"', 'B.F.U.-016 "Бесконечная шпаргалка"', 'B.F.U.-001 "Вечно сдающий студент"', 'B.F.U.-356 "Призраки ожидания"', 'B.F.U.-144 "Стукач"', 'B.F.U.-420 "Орхидея"', 'B.F.U.-888 "Серверы"', 'B.F.U.-080 "Та самая настольная игра"', 'B.F.U.-019 "Торговый автомат"'];
 
     const nothingnessPathArray = ["10958", "gnome"];
-    const nothingnessNameArray = ['B.F.U-10958 "Задача Танежи"', 'B.F.U-173 "Гном"'];
+    const nothingnessNameArray = ['B.F.U.-10958 "Задача Танежи"', 'B.F.U.-173 "Гном"'];
 
     const undefinedPathArray = ['Antidemidovich', "boatman", "elevator", "faceDetector"];
-    const undefinedNameArray = ['B.F.U-003 "Антидемидович"', 'B.F.U-1952-22.04 "Лодочник"', 'B.F.U-004 "Лифт"', 'B.F.U-013 "Распознаватель лиц"'];
+    const undefinedNameArray = ['B.F.U.-003 "Антидемидович"', 'B.F.U.-1952-22.04 "Лодочник"', 'B.F.U.-004 "Лифт"', 'B.F.U.-013 "Распознаватель лиц"'];
 
     const path = window.location.pathname;
     const elementsArray = document.getElementsByClassName("navBlockBottom");

@@ -597,6 +597,9 @@ main {
     }
 }
 @media screen and (max-width: 690px) {
+    html {
+        min-width: 335px;
+    }
     nav {
         width: 100%;
         display: flex;
