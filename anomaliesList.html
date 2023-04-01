@@ -8,6 +8,82 @@
     <meta name="theme-color" content="#3E3E3E">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="header.js"></script>
+    <script>
+        let HTMLValue = '';
+        function listContainerAdder (categoryName, pathArray, nameArray){
+            HTMLValue += "<div class=\"listContainer\">";
+            for (let i = 0; i < pathArray.length; i += 2){
+                if (i + 1 < pathArray.length){
+                    HTMLValue += "<div class=\"inListContainerBlock\">";
+                    HTMLValue += "<a href=\"anomalies/" + categoryName + "/" + pathArray[i] + "/anomaly.html\">";
+                    HTMLValue += "<div class=\"anomalyContainer\">";
+                    HTMLValue += "<h3>" + nameArray[i] + "</h3>";
+                    HTMLValue += "<img src=\"anomalies/" + categoryName + "/" + pathArray[i] + "/avatar.png\" alt=\"Аватар\">";
+                    HTMLValue += "</div></a>";
+
+                    HTMLValue += "<a href=\"anomalies/" + categoryName + "/" + pathArray[i + 1] + "/anomaly.html\">";
+                    HTMLValue += "<div class=\"anomalyContainer\">";
+                    HTMLValue += "<h3>" + nameArray[i + 1] + "</h3>";
+                    HTMLValue += "<img src=\"anomalies/" + categoryName + "/" + pathArray[i + 1] + "/avatar.png\" alt=\"Аватар\">";
+                    HTMLValue += "</div></a></div>";
+                }
+                else {
+                    HTMLValue += "<div class=\"inListContainerBlock\">";
+                    HTMLValue += "<a href=\"anomalies/" + categoryName + "/" + pathArray[i] + "/anomaly.html\">";
+                    HTMLValue += "<div class=\"anomalyContainer\">";
+                    HTMLValue += "<h3>" + nameArray[i] + "</h3>";
+                    HTMLValue += "<img src=\"anomalies/" + categoryName + "/" + pathArray[i] + "/avatar.png\" alt=\"Аватар\">";
+                    HTMLValue += "</div></a></div>";
+                }
+            }
+            HTMLValue += "</div>";
+        }
+
+        const infinitePathArray = ["canteen", "musicalEquations", "stopPoint"];
+        const infiniteNameArray = ['B.F.U-154 "Столовая"', 'B.F.U-708 "Музыкальные уравнения"', 'B.F.U-101 "Точка остановы"'];
+
+        const limitedPathArray = ["AI", "crib", "everPassingStudent", "ghosts", "informer", "orchid", "servers", "tableGame", "vendingMachine"];
+        const limitedNameArray = ['B.F.U-068 "Старый ИИ Миньон"', 'B.F.U-016 "Бесконечная шпаргалка"', 'B.F.U-001 "Вечно сдающий студент"', 'B.F.U-356 "Призраки ожидания"', 'B.F.U-144 "Стукач"', 'B.F.U-420 "Орхидея"', 'B.F.U-888 "Серверы"', 'B.F.U-080 "Та самая настольная игра"', 'B.F.U-019 "Тороговый автомат"'];
+
+        const nothingnessPathArray = ["10958", "gnome"];
+        const nothingnessNameArray = ['B.F.U-10958 "Задача Танежи"', 'B.F.U-173 "Гном"'];
+
+        const undefinedPathArray = ['Antidemidovich', "boatman", "elevator", "faceDetector"];
+        const undefinedNameArray = ['B.F.U-003 "Антидемидович"', 'B.F.U-1952-22.04 "Лодочник"', 'B.F.U-004 "Лифт"', 'B.F.U-013 "Распознаватель лиц"'];
+
+        HTMLValue += "<div class=\"chapter2\">\n" +
+            "            <h2 class=\"header2\">\n" +
+            "                Бесконечно большие\n" +
+            "            </h2>\n" +
+            "        </div>";
+        listContainerAdder("infinite", infinitePathArray, infiniteNameArray);
+
+        HTMLValue += "<div class=\"chapter2\">\n" +
+            "            <h2 class=\"header2\">\n" +
+            "                Неопределенные\n" +
+            "            </h2>\n" +
+            "        </div>";
+        listContainerAdder("undefined", undefinedPathArray, undefinedNameArray);
+
+        HTMLValue += "<div class=\"chapter2\">\n" +
+            "            <h2 class=\"header2\">\n" +
+            "                Ограниченные\n" +
+            "            </h2>\n" +
+            "        </div>";
+        listContainerAdder("limited", limitedPathArray, limitedNameArray);
+
+        HTMLValue += "<div class=\"chapter2\">\n" +
+            "            <h2 class=\"header2\">\n" +
+            "                Ничтожества\n" +
+            "            </h2>\n" +
+            "        </div>";
+        listContainerAdder("nothingness", nothingnessPathArray, nothingnessNameArray);
+
+        window.onload = function () {
+            document.getElementsByClassName("inMainContainer")[0].innerHTML = HTMLValue;
+        }
+
+    </script>
     <title>Классификация аномалий Фонда | B.F.U </title>
 </head>
 <body>
@@ -71,9 +147,7 @@
             <div class="inListContainerBlock">
                 <a href="anomalies/limited/everPassingStudent/anomaly.html">
                     <div class="anomalyContainer">
-                        <h3>
-                            B.F.U-001 "Вечно сдающий студент"
-                        </h3>
+                        <h3>B.F.U-001 "Вечно сдающий студент"</h3>
                         <img src="anomalies/limited/everPassingStudent/avatar.png" alt="Аватар">
                     </div>
                 </a>
@@ -235,7 +309,6 @@
             </div>
         </div>
     </div>
-
 </main>
 </body>
 </html>
