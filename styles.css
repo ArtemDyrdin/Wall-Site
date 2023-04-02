@@ -8,13 +8,16 @@
     font-family: GoogleSansBold;
     src: url(GoogleSans-Bold.ttf);
 }
-h1, h2, h3, h4, h5, h6{
+
+h1, h2, h3, h4, h5, h6 {
     font-family: GoogleSansBold, sans-serif;
 }
+
 p {
     font-family: GoogleSans, sans-serif;
     letter-spacing: -0.2px;
 }
+
 #BFU::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, li::selection {
     color: var(--mainLightColor);
     background-color: #1f2d36
@@ -27,22 +30,25 @@ p {
     --mainDarkBlueColor: #97B1C2;
     --secondLightColor: #CCD9E2;
 }
-*{
+
+* {
     border: 0;
     margin: 0;
 }
+
 *::selection {
     background-color: #89a7ba;
 }
 
-body{
+body {
     background-color: var(--backgroundColor);
 }
+
 main {
     background-color: var(--mainLightColor);
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     body {
         margin: 0 20px 0 20px;
         width: auto;
@@ -53,12 +59,14 @@ main {
         align-items: center;
         order: 2;
     }
+
     nav {
         height: 149px;
         width: 100%;
         display: flex;
         flex-direction: row;
     }
+
     #logoContainer {
         background-color: var(--mainLightColor);
         display: flex;
@@ -66,23 +74,28 @@ main {
         justify-content: space-evenly;
         flex: 0 0 460px;
     }
+
     #menuIcon {
         display: none;
     }
+
     #logoContainer h1 {
         color: var(--mainDarkColor);
         height: 110px;
         font-size: 98px;
         margin: auto 20px auto 0;
     }
+
     #logoContainer h4 {
         color: var(--mainDarkColor);
     }
+
     #logoContainer img {
         margin: 7px 0 0 20px;
         width: 121px;
         height: 109px;
     }
+
     #navContainer {
         width: 100%;
         background-color: var(--mainDarkBlueColor);
@@ -91,6 +104,7 @@ main {
         justify-content: space-around;
         align-items: center;
     }
+
     .navContainerTop {
         margin-top: 5px;
         width: calc(100% - 60px);
@@ -98,20 +112,24 @@ main {
         justify-content: start;
         align-items: center;
     }
+
     .navContainerTop h1 {
         font-size: 50px;
         margin: 0 10px 0 0;
         color: var(--mainLightColor);
     }
+
     #border {
         width: 1px;
         height: 100%;
         border-right: 2px solid var(--mainLightColor);
     }
+
     .navContainerTop h2 {
         color: var(--mainLightColor);
         margin: 5px 0 0 10px;
     }
+
     .navContainerBottom {
         width: calc(100% - 60px);
         margin-bottom: 5px;
@@ -121,10 +139,12 @@ main {
         justify-content: space-between;
 
     }
+
     .navContainerBottom a {
         width: 21%;
         text-decoration: none;
     }
+
     .navBlockBottom {
         transition: background-color 0.6s;
 
@@ -135,14 +155,17 @@ main {
         background-color: var(--mainLightColor);
         border-radius: 8px;
     }
+
     .navBlockBottom:hover {
         transition: background-color 0.6s;
         background-color: var(--secondLightColor);
     }
+
     .navBlockBottom:hover h3 {
         transition: color 0.6s;
         color: var(--mainDarkColor);
     }
+
     .navBlockBottom h3 {
         text-align: center;
         transition: color 0.6s;
@@ -150,10 +173,12 @@ main {
         font-size: 22px;
         margin: 5px 15px;
     }
+
     .currentPage {
         background-color: var(--mainDarkColor);
     }
-    .currentPage h3{
+
+    .currentPage h3 {
         color: var(--mainLightColor);
     }
 
@@ -162,15 +187,18 @@ main {
         width: 100%;
         transition: height 1s;
     }
+
     .inMainContainer {
         width: 98%;
         margin: 0 auto 30px auto;
 
     }
+
     .inContainerBlock {
         margin: 20px auto 0 auto;
         width: 96%;
     }
+
     .inContainerBlock p {
         color: var(--mainDarkColor);
         font-size: 25px;
@@ -187,12 +215,14 @@ main {
         align-items: center;
         background-color: var(--mainDarkBlueColor);
     }
+
     .header1 {
         font-size: 55px;
         width: auto;
         text-align: center;
         color: var(--mainLightColor);
     }
+
     .chapter2 {
         margin: 20px auto 0 auto;
         width: 100%;
@@ -203,6 +233,7 @@ main {
         align-items: center;
         justify-content: center;
     }
+
     .header2 {
         font-size: 40px;
         text-align: center;
@@ -212,35 +243,43 @@ main {
     #BFU {
         font-size: 45px;
     }
+
     #mainPoints {
         display: flex;
         flex-direction: row;
         align-content: flex-start;
         justify-content: space-between;
     }
-    #mainPoints h1, #mainPoints ul, #mainPoints ul a li{
+
+    #mainPoints h1, #mainPoints ul, #mainPoints ul a li {
         color: var(--mainDarkColor);
     }
+
     #mainPoints h1 {
         font-size: 55px;
     }
+
     #mainPoints ul a {
         color: var(--mainDarkColor);
         text-decoration: none;
         display: block;
     }
+
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
         transition: color 0.6s;
         padding: 10px 0;
         font-size: 35px;
     }
+
     #mainPoints ul a li:hover {
         color: var(--mainDarkBlueColor);
     }
+
     #rightMainPointsBlock {
         max-width: 45%;
     }
+
     #rightMainPointsBlock img {
         width: 100%;
     }
@@ -252,20 +291,24 @@ main {
         justify-content: space-between;
         align-items: start;
     }
+
     .textImageContainer p {
         color: var(--mainDarkColor);
         text-align: justify;
         width: 60%;
         font-size: 25px;
     }
+
     .textImageContainer img {
         width: 35%;
         object-fit: contain;
     }
+
     .professorContainer {
         width: 98%;
         margin: 20px auto 0 auto;
     }
+
     .professorHeader {
         width: 100%;
         margin-bottom: 15px;
@@ -273,20 +316,24 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .professorHeaderRight {
         display: flex;
         justify-content: space-between;
         align-items: end;
         cursor: pointer;
     }
+
     .professorHeaderRight img {
         object-fit: contain;
         height: 25px;
         margin-left: 10px;
     }
+
     .professorHeader h1, .professorHeaderRight h4 {
-     color: var(--mainDarkColor);
+        color: var(--mainDarkColor);
     }
+
     .open {
         overflow: hidden;
         margin-bottom: 0;
@@ -295,6 +342,7 @@ main {
         max-height: 1000px;
 
     }
+
     .close {
         overflow: hidden;
         transition: max-height 0.7s;
@@ -302,17 +350,20 @@ main {
         transition-timing-function: ease-in-out;
         max-height: 0;
     }
+
     .closeMarker {
         transition: transform 1s ease-in-out;
         transform-origin: 50% 50%;
         transform: rotate(0deg);
     }
+
     .openMarker {
         transition: transform 1s ease-in-out;
         transform-origin: 50% 50%;
         transform: rotate(180deg);
     }
 }
+
 @media screen and (max-width: 1199px) and (min-width: 691px) {
     * {
         -webkit-tap-highlight-color: transparent;
@@ -328,12 +379,14 @@ main {
         align-items: center;
         order: 2;
     }
+
     nav {
         height: 120px;
         width: 100%;
         display: flex;
         flex-direction: row;
     }
+
     #logoContainer {
         background-color: var(--mainLightColor);
         display: flex;
@@ -343,23 +396,28 @@ main {
         flex: 0 0 300px;
         align-content: center;
     }
+
     #menuIcon {
         display: none;
     }
+
     #logoContainer h1 {
         color: var(--mainDarkColor);
         font-size: 70px;
     }
+
     #logoContainer h4 {
         color: var(--mainDarkColor);
         font-size: 15px;
         align-self: center;
     }
+
     #logoContainer img {
         margin: 0 0 5px 0;
         object-fit: contain;
         height: 80px;
     }
+
     #navContainer {
         width: 100%;
         background-color: var(--mainDarkBlueColor);
@@ -368,6 +426,7 @@ main {
         justify-content: space-around;
         align-items: center;
     }
+
     .navContainerTop {
         height: 95px;
         width: calc(100% - 20px);
@@ -375,21 +434,25 @@ main {
         justify-content: start;
         align-items: center;
     }
+
     .navContainerTop h1 {
         font-size: 30px;
         margin: 0 10px 0 0;
         color: var(--mainLightColor);
     }
+
     #border {
         width: 1px;
         height: 80%;
         border-right: 2px solid var(--mainLightColor);
     }
+
     .navContainerTop h2 {
         font-size: 20px;
         color: var(--mainLightColor);
         margin: 5px 0 0 10px;
     }
+
     .navContainerBottom {
         width: calc(100% - 20px);
         margin-bottom: 5px;
@@ -399,10 +462,12 @@ main {
         justify-content: space-between;
 
     }
+
     .navContainerBottom a {
         width: 21%;
         text-decoration: none;
     }
+
     .navBlockBottom {
         transition: background-color 0.6s;
 
@@ -413,14 +478,17 @@ main {
         background-color: var(--mainLightColor);
         border-radius: 8px;
     }
+
     .navBlockBottom:hover {
         transition: background-color 0.6s;
         background-color: var(--secondLightColor);
     }
+
     .navBlockBottom:hover h3 {
         transition: color 0.6s;
         color: var(--mainDarkColor);
     }
+
     .navBlockBottom h3 {
         text-align: center;
         transition: color 0.6s;
@@ -428,10 +496,12 @@ main {
         font-size: 15px;
         margin: 5px 3px;
     }
+
     .currentPage {
         background-color: var(--mainDarkColor);
     }
-    .currentPage h3{
+
+    .currentPage h3 {
         color: var(--mainLightColor);
     }
 
@@ -440,15 +510,18 @@ main {
         width: 100%;
         transition: height 1s;
     }
+
     .inMainContainer {
         width: 95%;
         margin: 0 auto 30px auto;
 
     }
+
     .inContainerBlock {
         margin: 20px auto 0 auto;
         width: 96%;
     }
+
     .inContainerBlock p {
         color: var(--mainDarkColor);
         font-size: 25px;
@@ -464,6 +537,7 @@ main {
         align-items: center;
         background-color: var(--mainDarkBlueColor);
     }
+
     .header1 {
         margin: 3px auto;
         font-size: 45px;
@@ -471,6 +545,7 @@ main {
         text-align: center;
         color: var(--mainLightColor);
     }
+
     .chapter2 {
         margin: 20px auto 0 auto;
         width: 100%;
@@ -481,6 +556,7 @@ main {
         align-items: center;
         justify-content: center;
     }
+
     .header2 {
         font-size: 40px;
         text-align: center;
@@ -490,35 +566,43 @@ main {
     #BFU {
         font-size: 45px;
     }
+
     #mainPoints {
         display: flex;
         flex-direction: row;
         align-content: flex-start;
         justify-content: space-between;
     }
-    #mainPoints h1, #mainPoints ul, #mainPoints ul a li{
+
+    #mainPoints h1, #mainPoints ul, #mainPoints ul a li {
         color: var(--mainDarkColor);
     }
+
     #mainPoints h1 {
         font-size: 45px;
     }
+
     #mainPoints ul a {
         color: var(--mainDarkColor);
         text-decoration: none;
         display: block;
     }
+
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
         transition: color 0.6s;
         padding: 10px 0;
         font-size: 29px;
     }
+
     #mainPoints ul a li:hover {
         color: var(--mainDarkBlueColor);
     }
+
     #rightMainPointsBlock {
         max-width: 45%;
     }
+
     #rightMainPointsBlock img {
         width: 100%;
     }
@@ -530,20 +614,24 @@ main {
         justify-content: space-between;
         align-items: start;
     }
+
     .textImageContainer p {
         color: var(--mainDarkColor);
         text-align: justify;
         width: 60%;
         font-size: 25px;
     }
+
     .textImageContainer img {
         width: 35%;
         object-fit: contain;
     }
+
     .professorContainer {
         width: 98%;
         margin: 20px auto 0 auto;
     }
+
     .professorHeader {
         width: 100%;
         margin-bottom: 15px;
@@ -551,20 +639,24 @@ main {
         flex-direction: row;
         justify-content: space-between;
     }
+
     .professorHeaderRight {
         display: flex;
         justify-content: space-between;
         align-items: end;
         cursor: pointer;
     }
+
     .professorHeaderRight img {
         object-fit: contain;
         height: 25px;
         margin-left: 10px;
     }
+
     .professorHeader h1, .professorHeaderRight h4 {
         color: var(--mainDarkColor);
     }
+
     .open {
         overflow: hidden;
         margin-bottom: 0;
@@ -573,6 +665,7 @@ main {
         max-height: 1000px;
 
     }
+
     .close {
         overflow: hidden;
         transition: max-height 0.7s;
@@ -580,31 +673,37 @@ main {
         transition-timing-function: ease-in-out;
         max-height: 0;
     }
+
     .closeMarker {
         transition: transform 1s ease-in-out;
         transform-origin: 50% 50%;
         transform: rotate(0deg);
     }
+
     .openMarker {
         transition: transform 1s ease-in-out;
         transform-origin: 50% 50%;
         transform: rotate(180deg);
     }
 }
+
 @media screen and (max-width: 690px) {
     html {
         min-width: 335px;
     }
+
     nav {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
+
     body {
         margin: 0 7px 10px 7px;
         display: flex;
         flex-direction: column;
     }
+
     #logoContainer {
         background-color: var(--mainLightColor);
         margin-bottom: 10px;
@@ -621,12 +720,14 @@ main {
         justify-content: center;
         align-content: center;
     }
+
     #logoContainer h1 {
         height: 60px;
         grid-area: second;
         font-size: 56px;
         color: var(--mainDarkColor);
     }
+
     #logoContainer h4 {
         margin-left: 4px;
         margin-bottom: 5px;
@@ -634,6 +735,7 @@ main {
         font-size: 12px;
         color: var(--mainDarkColor);
     }
+
     #logoContainer img {
         margin-right: 10px;
         justify-self: start;
@@ -641,13 +743,16 @@ main {
         width: 79px;
         height: 72px;
     }
-    #navContainer{
+
+    #navContainer {
         width: 100%;
         background-color: var(--mainDarkBlueColor);
     }
+
     main {
         width: 100%;
     }
+
     #navContainer {
         width: 100%;
         height: 90px;
@@ -657,11 +762,13 @@ main {
         justify-content: space-around;
         align-items: center;
     }
+
     #border {
         display: none;
         width: 0;
         height: 0;
     }
+
     .navContainerTop {
         margin: 0 auto 0 auto;
         height: 100%;
@@ -676,12 +783,14 @@ main {
         justify-content: space-between;
         align-content: start;
     }
+
     .navContainerTop h1 {
         grid-area: first;
         font-size: 42px;
         height: 45px;
         color: var(--mainLightColor);
     }
+
     .navContainerTop h2 {
         grid-area: third;
         height: 45px;
@@ -690,6 +799,7 @@ main {
         color: var(--mainLightColor);
         margin-left: 1px;
     }
+
     #menuIcon {
         grid-area: second;
         align-self: center;
@@ -698,6 +808,7 @@ main {
         width: 40px;
         object-fit: contain;
     }
+
     .navContainerBottom {
         position: absolute;
         top: 200px;
@@ -709,30 +820,38 @@ main {
         align-items: end;
         z-index: 1;
     }
+
     .openMenu {
         transform: translateX(0);
     }
+
     .closeMenu {
         transform: translateX(-150%);
     }
+
     .navContainerBottom a {
         -webkit-tap-highlight-color: transparent;
         color: var(--mainDarkColor);
         text-decoration: none;
         width: 70%;
     }
+
     .anotherBackground {
         background-color: var(--mainDarkBlueColor) !important;
     }
+
     .anotherBackground h3 {
         color: var(--mainLightColor) !important;
     }
+
     .firstPoint {
         border-radius: 10px 10px 0 0;
     }
+
     .lastPoint {
         border-radius: 0 0 10px 10px;
     }
+
     .navBlockBottom {
         -webkit-box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.25);
         -moz-box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.25);
@@ -743,9 +862,11 @@ main {
         background-color: var(--secondLightColor);
         padding: 3px 5px;
     }
+
     .navBlockBottom:hover h3 {
         text-decoration: underline;
     }
+
     .navBlockBottom h3 {
         text-align: center;
         transition: color 0.6s;
@@ -753,14 +874,17 @@ main {
         font-size: 22px;
         margin: 5px 15px;
     }
+
     .inMainContainer {
         width: calc(100% - 30px);
         margin: 0 auto 10px auto;
 
     }
+
     .inContainerBlock {
         margin: 10px 0 5px 0;
     }
+
     .inContainerBlock p {
         color: var(--mainDarkColor);
         font-size: 20px;
@@ -776,6 +900,7 @@ main {
         align-items: center;
         background-color: var(--mainDarkBlueColor);
     }
+
     .header1 {
         margin: 10px 5px;
         font-size: 30px;
@@ -783,29 +908,35 @@ main {
         text-align: center;
         color: var(--mainLightColor);
     }
+
     #BFU {
         font-size: 29px;
     }
+
     #mainPoints {
         display: flex;
         flex-direction: column-reverse;
         align-content: flex-start;
         justify-content: space-between;
     }
-    #mainPoints h1, #mainPoints ul, #mainPoints ul a li{
+
+    #mainPoints h1, #mainPoints ul, #mainPoints ul a li {
         color: var(--mainDarkColor);
         text-align: center;
     }
+
     #mainPoints h1 {
         text-decoration: underline;
         font-family: GoogleSans, sans-serif !important;
         font-weight: normal;
     }
+
     #mainPoints ul {
         margin-top: 1px;
         width: 100%;
         padding: 0;
     }
+
     #mainPoints ul a {
         color: var(--mainDarkColor);
         text-decoration: none;
@@ -813,18 +944,22 @@ main {
         -webkit-tap-highlight-color: transparent;
 
     }
+
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
         list-style-type: none;
         font-size: 20px;
     }
+
     #mainPoints ul a li:active {
         color: var(--mainDarkBlueColor);
     }
+
     #rightMainPointsBlock {
         max-width: 100%;
         margin: 0 auto;
     }
+
     #rightMainPointsBlock img {
         width: 100%;
     }
@@ -836,12 +971,14 @@ main {
         justify-content: start;
         align-items: center;
     }
+
     .textImageContainer p {
         color: var(--mainDarkColor);
         text-align: justify;
         font-size: 20px;
         margin-bottom: 10px;
     }
+
     .textImageContainer img {
         width: 100%;
         object-fit: contain;
@@ -851,6 +988,7 @@ main {
         width: 100%;
         margin: 20px auto;
     }
+
     .professorHeader {
         margin: 5px auto 10px auto;
         width: 96%;
@@ -859,6 +997,7 @@ main {
         justify-content: space-between;
         align-items: center;
     }
+
     .professorHeaderRight {
         transition: background-color 0.3s;
         border-radius: 10px;
@@ -870,14 +1009,17 @@ main {
         align-items: center;
         cursor: pointer;
     }
+
     .professorHeaderRight:active {
         background-color: var(--secondLightColor);
     }
+
     .professorHeaderRight img {
         object-fit: contain;
         height: 15px;
         margin-left: 5px;
     }
+
     .professorHeader h1 {
         vertical-align: center;
         width: calc(100% - 110px);
@@ -885,11 +1027,13 @@ main {
         font-size: 23px;
         color: var(--mainDarkColor);
     }
+
     .professorHeaderRight h4 {
         text-align: right;
         font-size: 13px;
         color: var(--mainDarkBlueColor);
     }
+
     .open {
         overflow: hidden;
         margin-bottom: 0;
@@ -898,6 +1042,7 @@ main {
         max-height: 1000px;
 
     }
+
     .close {
         overflow: hidden;
         transition: max-height 0.7s;
@@ -905,11 +1050,13 @@ main {
         transition-timing-function: ease-in-out;
         max-height: 0;
     }
+
     .closeMarker {
         transition: transform 1s;
         transform-origin: 50% 50%;
         transform: rotate(0deg);
     }
+
     .openMarker {
         transition: transform 1s;
         transform-origin: 50% 50%;

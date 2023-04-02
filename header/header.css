@@ -90,11 +90,12 @@
     display: none;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .nav--left {
         /* width: 100%; */
         padding: 10px 10px 10px 80px;
     }
+
     .nav--left-title {
         text-align: left;
         font-size: 36px;
@@ -103,15 +104,17 @@
     .nav--right-title_big {
         font-size: 44px;
     }
+
     .nav--right {
         padding: 10px;
     }
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
     .nav_mobile {
         display: block !important;
     }
+
     .navigation {
         flex-direction: column;
     }
@@ -127,22 +130,27 @@
     .nav--left-subtitle {
         text-align: left;
     }
+
     .nav--left-logo {
         top: 10px;
         width: 70px;
     }
+
     .nav--right-title {
         font-size: 17px;
         height: auto;
         display: none;
     }
+
     .nav--right-title_mobile-only {
         display: block;
         max-width: 80%;
     }
+
     .test2 {
         display: inline;
     }
+
     .test1 {
         display: none;
     }

@@ -1,13 +1,16 @@
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
     .chapter1 {
         margin-top: 30px !important;
     }
+
     .chapter2 {
         margin-top: 30px !important;
     }
+
     .imageAndSmallPS {
         width: 35%;
     }
+
     .imageAndSmallPS p {
         color: var(--mainDarkBlueColor) !important;
         width: 90% !important;
@@ -15,9 +18,11 @@
         font-size: 20px !important;
         margin: 10px auto 0 auto !important;
     }
+
     .textImageContainer .imageAndSmallPS img {
         width: 100%;
     }
+
     .chapter3 {
         border-radius: 10px;
         margin-top: 30px;
@@ -28,12 +33,14 @@
         justify-content: center;
         background-color: var(--mainDarkBlueColor);
     }
+
     .header3 {
         font-size: 30px;
         color: var(--mainLightColor);
         width: 95%;
         text-align: center;
     }
+
     .listContainer {
         margin: 30px auto 0 auto;
         display: flex;
@@ -41,21 +48,25 @@
         align-items: center;
         justify-content: start;
     }
+
     .inListContainerBlock {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .inListContainerBlock a {
         margin: 20px 0 0 0;
         width: 49%;
         text-decoration: none;
     }
+
     .anomalyContainer {
         display: flex;
         justify-content: space-between;
     }
+
     .anomalyContainer h3 {
         width: calc(100% - 120px);
         transition: color 0.6s;
@@ -70,20 +81,24 @@
         object-fit: contain;
     }
 
-    .inListContainerBlock a:hover  .anomalyContainer h3 {
+    .inListContainerBlock a:hover .anomalyContainer h3 {
         color: var(--mainDarkBlueColor);
     }
 }
+
 @media screen and (max-width: 1199px) and (min-width: 691px) {
     .chapter1 {
         margin-top: 30px !important;
     }
+
     .chapter2 {
         margin-top: 30px !important;
     }
+
     .imageAndSmallPS {
         width: 35%;
     }
+
     .imageAndSmallPS p {
         color: var(--mainDarkBlueColor) !important;
         width: 90% !important;
@@ -91,9 +106,11 @@
         font-size: 17px !important;
         margin: 10px auto 0 auto !important;
     }
+
     .textImageContainer .imageAndSmallPS img {
         width: 100%;
     }
+
     .chapter3 {
         border-radius: 10px;
         margin-top: 30px;
@@ -104,12 +121,14 @@
         justify-content: center;
         background-color: var(--mainDarkBlueColor);
     }
+
     .header3 {
         font-size: 25px;
         color: var(--mainLightColor);
         width: 95%;
         text-align: center;
     }
+
     .listContainer {
         margin: 30px auto 0 auto;
         display: flex;
@@ -117,21 +136,25 @@
         align-items: start;
         justify-content: space-between;
     }
+
     .inListContainerBlock {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
     .inListContainerBlock a {
         margin: 20px 0 0 0;
         width: 49%;
         text-decoration: none;
     }
+
     .anomalyContainer {
         display: flex;
         justify-content: space-between;
     }
+
     .anomalyContainer h3 {
         transition: color 0.6s;
         width: calc(100% - 110px);
@@ -140,14 +163,17 @@
         text-align: center;
         color: var(--mainDarkColor);
     }
+
     .anomalyContainer img {
         width: 100px;
         object-fit: contain;
     }
-    .inListContainerBlock a:hover  .anomalyContainer h3 {
+
+    .inListContainerBlock a:hover .anomalyContainer h3 {
         color: var(--mainDarkBlueColor);
     }
 }
+
 @media screen and (max-width: 690px) {
     .chapter2 {
         width: calc(100% + 30px);
@@ -158,17 +184,20 @@
         justify-content: center;
         background-color: var(--secondLightColor);
     }
+
     .header2 {
         font-size: 28px;
         text-align: center;
         color: var(--mainDarkColor);
         margin: 4px auto;
     }
+
     .textImageContainer p {
         margin: 15px 0;
         font-size: 20px;
         text-align: justify;
     }
+
     .imageAndSmallPS p {
         color: var(--mainDarkBlueColor) !important;
         width: 100% !important;
@@ -176,19 +205,23 @@
         font-size: 15px !important;
         margin: 10px auto 10px auto !important;
     }
+
     .textImageContainer .imageAndSmallPS img, .textImageContainer img {
         width: 100%;
         object-fit: contain;
     }
+
     .chapter3 {
         display: none;
     }
+
     .listContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: start;
     }
+
     .inListContainerBlock {
         width: 100%;
         display: flex;
@@ -196,13 +229,15 @@
         justify-content: start;
         align-items: center;
     }
+
     .inListContainerBlock a {
         -webkit-tap-highlight-color: transparent;
         width: 100%;
         text-decoration: none;
         margin-top: 25px;
     }
-    .inListContainerBlock a:active .anomalyContainer{
+
+    .inListContainerBlock a:active .anomalyContainer {
         background-color: var(--secondLightColor);
     }
 
@@ -216,10 +251,12 @@
         justify-content: space-between;
         border-radius: 5px;
     }
+
     .anomalyContainer img {
         width: 20%;
         object-fit: contain;
     }
+
     .anomalyContainer h3 {
         width: calc(80% - 10px);
         margin: auto 0 auto 0;

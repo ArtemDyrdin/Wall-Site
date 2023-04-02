@@ -1,9 +1,9 @@
-function titleHeaderEdit(pathArray, nameArray, flag){
+function titleHeaderEdit(pathArray, nameArray, flag) {
     if (flag) {
         return;
     }
     const path = window.location.pathname;
-    for (let i = 0; i < pathArray.length; i++){
+    for (let i = 0; i < pathArray.length; i++) {
         if (path.indexOf(pathArray[i]) >= 0) {
             document.getElementsByTagName("title")[0].innerText = nameArray[i];
             document.getElementsByClassName("header1")[0].innerText = nameArray[i];
@@ -37,23 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
         elementsArray[0].className += " currentPage";
         pageName.innerText = "Главная";
         pageDescription.innerText = "Основные детали и история учреждения";
-    }
-    else if (path.indexOf("anomalies") >= 0) {
-        elementsArray[1].className += " currentPage" ;
+    } else if (path.indexOf("anomalies") >= 0) {
+        elementsArray[1].className += " currentPage";
         pageName.innerText = "Аномалии";
         if (path.indexOf("infinite") >= 0) {
             pageDescription.innerText = "Бесконечно большие";
-        }
-        else if (path.indexOf("limited") >= 0) {
+        } else if (path.indexOf("limited") >= 0) {
             pageDescription.innerText = "Ограниченные";
-        }
-        else if (path.indexOf("nothingness") >= 0) {
+        } else if (path.indexOf("nothingness") >= 0) {
             pageDescription.innerText = "Ничтожества";
-        }
-        else if (path.indexOf("undefined") >= 0) {
+        } else if (path.indexOf("undefined") >= 0) {
             pageDescription.innerText = "Неопределенные";
-        }
-        else {
+        } else {
             pageDescription.innerText = "Классификация аномалий Фонда";
         }
         titleHeaderEdit(infinitePathArray, infiniteNameArray, flag);
@@ -61,25 +56,23 @@ document.addEventListener("DOMContentLoaded", () => {
         titleHeaderEdit(limitedPathArray, limitedNameArray, flag);
         titleHeaderEdit(nothingnessPathArray, nothingnessNameArray, flag);
 
-    }
-    else if (path.indexOf("professors") >= 0) {
-        elementsArray[2].className += " currentPage" ;
+    } else if (path.indexOf("professors") >= 0) {
+        elementsArray[2].className += " currentPage";
         pageName.innerText = "Учёные";
         pageDescription.innerText = "Сотрудники Фонда";
-    }
-    else if (path.indexOf("develop") >= 0) {
-        elementsArray[3].className += " currentPage" ;
+    } else if (path.indexOf("develop") >= 0) {
+        elementsArray[3].className += " currentPage";
         pageName.innerText = "Жертвы";
         pageDescription.innerText = "Те, кто пыхтел над сайтом";
     }
 
 });
+
 function menuClick() {
     const currentClassName = document.getElementsByClassName("navContainerBottom")[0].className;
-    if (currentClassName === "navContainerBottom closeMenu" || currentClassName === "navContainerBottom"){
+    if (currentClassName === "navContainerBottom closeMenu" || currentClassName === "navContainerBottom") {
         document.getElementsByClassName("navContainerBottom")[0].className = "navContainerBottom openMenu";
-    }
-    else {
+    } else {
         document.getElementsByClassName("navContainerBottom")[0].className = "navContainerBottom closeMenu";
     }
 }

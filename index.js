@@ -1,4 +1,5 @@
 console.log("Header included!")
+
 function getCurrentPage() {
     const currentPathname = window.location.pathname;
 

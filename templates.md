@@ -1,5 +1,7 @@
-Шаблон навигации 
+Шаблон навигации
+
 ```html
+
 <nav>
     <div id="logoContainer">
         <img src="data/logo.png" alt="Логотип">
@@ -55,7 +57,9 @@
 
 <script src="main.js"></script>
 ```
+
 Шаблоны блоков с заголовками первого и второго уровней:
+
 ```html
 <div class="chapter1">
     <h1 class="header1">
@@ -63,6 +67,7 @@
     </h1>
 </div>
 ```
+
 ```html
 <div class="chapter2">
     <h2 class="header2">
@@ -70,7 +75,9 @@
     </h2>
 </div>
 ```
+
 Шаблон блока с текстом слева и изображением справа. Используется только на страницах с аномалиями
+
 ```html
 <div class="textImageContainer">
     <p>
