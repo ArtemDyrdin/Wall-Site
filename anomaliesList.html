@@ -10,10 +10,11 @@
     <script src="main.js"></script>
     <script>
         let HTMLValue = '';
-        function listContainerAdder (categoryName, pathArray, nameArray){
+
+        function listContainerAdder(categoryName, pathArray, nameArray) {
             HTMLValue += "<div class=\"listContainer\">";
-            for (let i = 0; i < pathArray.length; i += 2){
-                if (i + 1 < pathArray.length){
+            for (let i = 0; i < pathArray.length; i += 2) {
+                if (i + 1 < pathArray.length) {
                     HTMLValue += "<div class=\"inListContainerBlock\">";
                     HTMLValue += "<a href=\"anomalies/" + categoryName + "/" + pathArray[i] + "/anomaly.html\">";
                     HTMLValue += "<div class=\"anomalyContainer\">";
@@ -26,8 +27,7 @@
                     HTMLValue += "<h3>" + nameArray[i + 1] + "</h3>";
                     HTMLValue += "<img src=\"anomalies/" + categoryName + "/" + pathArray[i + 1] + "/avatar.png\" alt=\"Аватар\">";
                     HTMLValue += "</div></a></div>";
-                }
-                else {
+                } else {
                     HTMLValue += "<div class=\"inListContainerBlock\">";
                     HTMLValue += "<a href=\"anomalies/" + categoryName + "/" + pathArray[i] + "/anomaly.html\">";
                     HTMLValue += "<div class=\"anomalyContainer\">";
@@ -79,7 +79,7 @@
             "        </div>";
         listContainerAdder("nothingness", nothingnessPathArray, nothingnessNameArray);
 
-        window.onload = function () {
+        window.onload = function() {
             document.getElementsByClassName("inMainContainer")[0].innerHTML = HTMLValue;
         }
 
