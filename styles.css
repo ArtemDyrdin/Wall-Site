@@ -232,7 +232,6 @@ main {
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
         transition: color 0.6s;
-        width: 315px;
         padding: 10px 0;
         font-size: 35px;
     }
@@ -511,7 +510,6 @@ main {
     #mainPoints ul a li {
         font-family: GoogleSansBold, sans-serif;
         transition: color 0.6s;
-        width: 315px;
         padding: 10px 0;
         font-size: 29px;
     }
