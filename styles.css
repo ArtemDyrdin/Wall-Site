@@ -1,3 +1,14 @@
+:root {
+    --mainLightColor: #F3F6FB;
+    --backgroundColor: #3E3E3E;
+    --mainDarkColor: #404B55;
+    --mainDarkBlueColor: #97B1C2;
+    --secondLightColor: #CCD9E2;
+
+    --mainDarkThemeColor: #0B0B03;
+    --mainDarkThemeBackground: #664C3D;
+    --mainDarkThemeLight: #C0B7AE;
+}
 /*!Жирное начертание испльзовать через отдельный шрифт "GoogleSansBold"*/
 @font-face {
     font-family: GoogleSans;
@@ -23,14 +34,6 @@ p {
     background-color: #1f2d36
 }
 
-:root {
-    --mainLightColor: #F3F6FB;
-    --backgroundColor: #3E3E3E;
-    --mainDarkColor: #404B55;
-    --mainDarkBlueColor: #97B1C2;
-    --secondLightColor: #CCD9E2;
-}
-
 * {
     border: 0;
     margin: 0;
@@ -47,6 +50,7 @@ body {
 main {
     background-color: var(--mainLightColor);
 }
+
 
 @media screen and (min-width: 1200px) {
     body {
@@ -1064,3 +1068,121 @@ main {
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #756c6c;
+        min-height: 100vh;
+    }
+
+    .chapter1, .chapter2, .chapter3 {
+        background: var(--mainDarkThemeBackground);
+    }
+
+    main {
+        background: var(--mainDarkThemeColor) !important;
+    }
+
+    .textImageContainer p, .inContainerBlock p, #mainPoints h1, #mainPoints ul, #mainPoints ul a li, .unhappyTop h2, .unhappyBottom p, .professorHeader h1, .professorHeaderRight h4 {
+        color: var(--mainDarkThemeLight) !important;
+    }
+
+    .textImageContainer img, .anomalyContainer img {
+        border-radius: 5px;
+        background: var(--mainLightColor);
+    }
+
+    .header1, .header2, .header3 {
+        color: var(--mainDarkThemeLight);
+    }
+
+    #pageName, #pageDescription {
+        color: var(--mainDarkThemeLight);
+    }
+
+    #navContainer {
+        background: var(--mainDarkThemeBackground);
+    }
+
+    #logoContainer {
+        background: var(--mainDarkThemeColor);
+    }
+
+    #logoContainer h1, #logoContainer h4 {
+        color: var(--mainDarkThemeLight);
+    }
+
+    #menuIcon {
+        filter: invert(1);
+    }
+
+    #border {
+        border-right: 2px solid var(--mainDarkThemeLight);
+    }
+
+    .anomalyContainer h3 {
+        color: var(--mainDarkThemeBackground);
+    }
+
+    .anomalyContainer:hover h3 {
+        color: var(--mainDarkThemeLight) !important;
+    }
+
+    .professorHeaderRight img {
+        filter: invert(1);
+    }
+
+    @media screen and (min-width: 691px) {
+        .navBlockBottom {
+            background: var(--mainDarkThemeLight);
+        }
+
+        .navBlockBottom h3 {
+            color: var(--mainDarkThemeColor);
+        }
+
+        .navBlockBottom:hover {
+            background: #9AB1C2;
+        }
+
+        .navBlockBottom:hover h3 {
+            color: var(--mainDarkColor);
+        }
+
+        .currentPage {
+            background: var(--mainDarkColor);
+        }
+
+        .currentPage h3 {
+            color: var(--mainDarkThemeLight);
+        }
+    }
+    @media screen and (max-width: 690px) {
+        body {
+            background: #484347;
+        }
+
+        .navBlockBottom {
+            background: #32241B;
+        }
+
+        .anotherBackground {
+            background: var(--mainDarkThemeBackground) !important;
+        }
+
+        .navBlockBottom h3 {
+            color: var(--mainDarkThemeLight) !important;
+        }
+
+        .inListContainerBlock a:active .anomalyContainer {
+            background-color: #32241B;
+        }
+
+        .inListContainerBlock a:active .anomalyContainer h3 {
+            text-decoration: underline;
+        }
+
+        .professorHeaderRight:active {
+            background-color: var(--mainDarkThemeBackground);
+        }
+    }
+}
