@@ -9,6 +9,7 @@
     --mainDarkThemeBackground: #664C3D;
     --mainDarkThemeLight: #C0B7AE;
 }
+
 /*!Жирное начертание испльзовать через отдельный шрифт "GoogleSansBold"*/
 @font-face {
     font-family: GoogleSans;
@@ -29,7 +30,7 @@ p {
     letter-spacing: -0.2px;
 }
 
-#BFU::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, li::selection {
+#BFU::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, li::selection, br::selection, b::selection, span::selection {
     color: var(--mainLightColor);
     background-color: #1f2d36
 }
@@ -1163,6 +1164,9 @@ main {
 
         .navBlockBottom {
             background: #32241B;
+            -webkit-box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.35);
+            -moz-box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.35);
+            box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.35);
         }
 
         .anotherBackground {
@@ -1173,8 +1177,13 @@ main {
             color: var(--mainDarkThemeLight) !important;
         }
 
+        .anomalyContainer h3 {
+            color: var(--mainDarkThemeLight);
+            opacity: 90%;
+        }
+
         .inListContainerBlock a:active .anomalyContainer {
-            background-color: #32241B;
+            background-color: var(--mainDarkThemeBackground);
         }
 
         .inListContainerBlock a:active .anomalyContainer h3 {
