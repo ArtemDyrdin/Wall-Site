@@ -1,7 +1,7 @@
 
 .textImageContainer img, .anomalyContainer img {
     border-radius: 5px;
-    background: var(--mainLightColor);
+    background: #fff;
 }
 
 @media screen and (min-width: 1200px) {
