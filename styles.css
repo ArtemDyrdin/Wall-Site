@@ -52,6 +52,9 @@ main {
     background-color: var(--mainLightColor);
 }
 
+.textImageContainer img {
+    border-radius: 7px !important;
+}
 
 @media screen and (min-width: 1200px) {
     body {

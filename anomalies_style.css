@@ -1,3 +1,9 @@
+
+.textImageContainer img, .anomalyContainer img {
+    border-radius: 5px;
+    background: var(--mainLightColor);
+}
+
 @media screen and (min-width: 1200px) {
     .chapter1 {
         margin-top: 30px !important;
