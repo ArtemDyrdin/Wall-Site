@@ -11,6 +11,46 @@
         .inContainerBlock p {
             line-height: 135%;
         }
+
+        .inContainerBlock p span {
+            color: var(--secondLightColor);
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            .red {
+                background-color: #690f0f;
+            }
+
+            .green {
+                background-color: #0e580e;
+            }
+
+            .yellow {
+                background-color: #8a8a09;
+            }
+
+            .violet {
+                background-color: #680393;
+            }
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            .red {
+                background-color: #690f0f;
+            }
+
+            .green {
+                background-color: #0e580e;
+            }
+
+            .yellow {
+                background-color: #8a8a09;
+            }
+
+            .violet {
+                background-color: #680393;
+            }
+        }
     </style>
     <title>Главная | B.F.U </title>
 </head>
@@ -112,8 +152,7 @@
         <div class="inContainerBlock">
             <p>
                 <b>Название:</b> Ничтожество (infinitesimal).<br>
-                <b>Класс угрозы:</b> <span
-                    style="background-color: green; color: var(--secondLightColor);">зелёный.</span><br>
+                <b>Класс угрозы:</b> <span class="green">зелёный.</span><br>
                 <b>Описание:</b> Существа и объекты, представляющие низший класс опасности для гражданских лиц.
                 Зачастую, объекты данного класса либо вовсе не оказывают влияния на окружающую действительность, либо
                 это влияние не представляет существенной угрозы для жизни сторонних лиц.
@@ -121,8 +160,7 @@
             <br><br>
             <p>
                 <b>Название:</b> Ограниченные (bounded).<br>
-                <b>Класс угрозы:</b> <span
-                    style="background-color: #8a8a09; color: var(--secondLightColor);">жёлтый.</span><br>
+                <b>Класс угрозы:</b> <span class="yellow">жёлтый.</span><br>
                 <b>Описание:</b> Существа и объекты, представляющие умеренный класс опасности для гражданских лиц.
                 Зачастую, объекты данного класса могут оказывать умеренное влияние на окружающую действительность.
                 Проявляют агрессию / опасные свойства лишь при некорректном обращении или соблюдении специфических
@@ -131,8 +169,7 @@
             <br><br>
             <p>
                 <b>Название:</b> Бесконечно Большие (infinitely large).<br>
-                <b>Класс угрозы:</b> <span
-                    style="background-color: #ff2929; color: var(--secondLightColor);">красный.</span><br>
+                <b>Класс угрозы:</b> <span class="red">красный.</span><br>
                 <b>Описание:</b> Существа и объекты, представляющие высший класс опасности для гражданских лиц. Объекты
                 данного класса оказывают существенное влияние на окружающую действительность, ведут себя агрессивно и
                 представляют прямую угрозу гражданским лицам.
@@ -140,7 +177,7 @@
             <br><br>
             <p>
                 <b>Название:</b> Неопределённые (indeterminate).<br>
-                <b>Класс угрозы:</b> <span style="background-color: darkviolet; color: var(--secondLightColor);">фиолетовый.</span><br>
+                <b>Класс угрозы:</b> <span class="violet">фиолетовый.</span><br>
                 <b>Описание:</b> Объекты, не попавшие в основную классификацию. Могут как представлять угрозу, так и
                 быть абсолютно безвредными. Хаотичны и непредсказуемы.
             </p>
@@ -148,25 +185,23 @@
             <p style="text-decoration: underline">Памятка по классификации:</p>
             <p>
                 Если возможно разместить объект на полигоне №231, оставить его там на длительное время, и ничего плохого
-                не случится, то это, скорее всего, объект класса <span
-                    style="background-color: #00a000; color: var(--secondLightColor);">Ничтожества.</span>
+                не случится, то это, скорее всего, объект класса <span class="green">Ничтожества.</span>
             </p>
             <br>
             <p>
                 Если при размещении объекта на полигоне №231 на длительное время нельзя заранее сказать, что случится,
-                то это, вероятно, объект класса <span
-                    style="background-color: #8a8a09; color: var(--secondLightColor);">Ограниченные.</span>
+                то это, вероятно, объект класса <span class="yellow">Ограниченные.</span>
             </p>
             <br>
             <p>
                 Если при размещении объекта на полигоне №231 на длительное время, прогнозируются катастрофические
                 разрушения со множеством жертв, то это , вероятно, объект класса <span
-                    style="background-color: #ff2929; color: var(--secondLightColor);">Бесконечно Большие.</span>
+                    class="red">Бесконечно Большие.</span>
             </p>
             <br>
             <p>
                 Если объект можно разместить на полигоне №231, но лучше этого не делать, то это, вероятно, объект класса
-                <span style="background-color: darkviolet; color: var(--secondLightColor);">Неопределённые.</span>
+                <span class="violet">Неопределённые.</span>
             </p>
         </div>
         <div class="chapter1" id="anchor2">
