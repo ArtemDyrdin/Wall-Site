@@ -77,14 +77,11 @@ main {
 
     #logoContainer {
         background-color: var(--mainLightColor);
-        display: flex;
-        /*flex-wrap: nowrap;*/
         justify-content: space-evenly;
         flex: 0 0 460px;
+        display: -webkit-flex;
         -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -o-flex-wrap: wrap;
+        display: flex;
         flex-wrap: wrap;
     }
 
@@ -402,11 +399,9 @@ main {
 
     #logoContainer {
         background-color: var(--mainLightColor);
-        display: flex;
+        display: -webkit-flex;
         -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -o-flex-wrap: wrap;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
