@@ -78,7 +78,7 @@ main {
     #logoContainer {
         background-color: var(--mainLightColor);
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
         flex: 0 0 460px;
     }
@@ -398,7 +398,7 @@ main {
     #logoContainer {
         background-color: var(--mainLightColor);
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         flex: 0 0 300px;
