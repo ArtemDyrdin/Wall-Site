@@ -5,9 +5,9 @@
     --mainDarkBlueColor: #97B1C2;
     --secondLightColor: #CCD9E2;
 
-    --mainDarkThemeColor: #0B0B03;
-    --mainDarkThemeBackground: #664C3D;
-    --mainDarkThemeLight: #C0B7AE;
+    --mainDarkThemeColor: #2D353E;
+    --mainDarkThemeBackground: #5D6D7E;
+    --mainDarkThemeLight: #CCD9E2;
 }
 
 /*!Жирное начертание испльзовать через отдельный шрифт "GoogleSansBold"*/
@@ -1078,7 +1078,7 @@ main {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: #756c6c;
+        background: #404B55;
         min-height: 100vh;
     }
 
@@ -1119,12 +1119,12 @@ main {
         color: var(--mainDarkThemeLight);
     }
 
-    #menuIcon {
-        filter: invert(1);
-    }
-
     #border {
         border-right: 2px solid var(--mainDarkThemeLight);
+    }
+
+    #menuIcon {
+        filter: hue-rotate(17deg);
     }
 
     .anomalyContainer h3 {
@@ -1136,7 +1136,7 @@ main {
     }
 
     .professorHeaderRight img {
-        filter: invert(1);
+        filter: brightness(2);
     }
 
     @media screen and (min-width: 691px) {
@@ -1149,11 +1149,11 @@ main {
         }
 
         .navBlockBottom:hover {
-            background: #9AB1C2;
+            background: #89A7BA;
         }
 
         .navBlockBottom:hover h3 {
-            color: var(--mainDarkColor);
+            color: var(--mainDarkThemeLight);
         }
 
         .currentPage {
@@ -1165,12 +1165,11 @@ main {
         }
     }
     @media screen and (max-width: 690px) {
-        body {
-            background: #484347;
-        }
-
+        /*body {*/
+        /*    background: #484347;*/
+        /*}*/
         .navBlockBottom {
-            background: #32241B;
+            background: #404B55;
             -webkit-box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.35);
             -moz-box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.35);
             box-shadow: -4px 5px 26px 0 rgba(34, 60, 80, 0.35);
