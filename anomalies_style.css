@@ -93,6 +93,10 @@
 }
 
 @media screen and (max-width: 1199px) and (min-width: 691px) {
+    .fullWidth {
+        width: 98% !important;
+    }
+
     .chapter1 {
         margin-top: 30px !important;
     }
@@ -181,6 +185,14 @@
 }
 
 @media screen and (max-width: 690px) {
+    .fullWidth {
+        width: 98% !important;
+    }
+
+    .inMainContainer h1 {
+        font-size: 22px;
+    }
+
     .chapter2 {
         width: calc(100% + 30px);
         margin-top: 20px !important;
