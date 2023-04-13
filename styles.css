@@ -1128,7 +1128,7 @@ main {
     }
 
     .anomalyContainer h3 {
-        color: var(--mainDarkThemeBackground);
+        color: var(--mainDarkBlueColor);
     }
 
     .anomalyContainer:hover h3 {
