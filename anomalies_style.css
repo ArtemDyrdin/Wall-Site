@@ -5,6 +5,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .fullWidth {
+        width: 98% !important;
+    }
+
     .chapter1 {
         margin-top: 30px !important;
     }
