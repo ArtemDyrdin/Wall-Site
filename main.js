@@ -79,13 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (path.indexOf('anomaliesList.html') === -1 || path.indexOf('main.html') === -1 || path.indexOf('develop.html') === -1) {
-        let bfuMas = [];
-        bfuFinder(infiniteNameArray, bfuMas);
-        bfuFinder(undefinedNameArray, bfuMas);
-        bfuFinder(limitedNameArray, bfuMas);
-        bfuFinder(nothingnessNameArray, bfuMas);
-        let firstFindArea = document.getElementsByClassName('textImageContainer');
-        console.log(bfuMas[bfuMas.length + 1]);
+        // let bfuMas = [];
+        // bfuFinder(infiniteNameArray, bfuMas);
+        // bfuFinder(undefinedNameArray, bfuMas);
+        // bfuFinder(limitedNameArray, bfuMas);
+        // bfuFinder(nothingnessNameArray, bfuMas);
+        // let firstFindArea = document.getElementsByClassName('textImageContainer');
+        // console.log(bfuMas[bfuMas.length + 1]);
         // for (let i = 0; i < firstFindArea.length; i++) {
         //     let currentArea = firstFindArea[i].getElementsByTagName('p')[0];
         //     for (let j = 0; j < currentArea.innerText.length - 7; j++) {
