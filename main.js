@@ -13,6 +13,18 @@ function titleHeaderEdit(pathArray, nameArray, flag) {
     }
 }
 
+function bfuFinder(inputArray, outputArray) {
+    for (let i = 0; i < inputArray.length; i++) {
+        let spaceIndex = inputArray[i].indexOf(' ');
+        let tempAnomalyName = '';
+        for (let j = 0; j < spaceIndex; j++) {
+            tempAnomalyName += inputArray[i][j];
+        }
+        outputArray.push(tempAnomalyName);
+    }
+    console.log(outputArray);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     let flag = false;
 
@@ -64,6 +76,38 @@ document.addEventListener("DOMContentLoaded", () => {
         elementsArray[3].className += " currentPage";
         pageName.innerText = "Жертвы";
         pageDescription.innerText = "Те, кто пыхтел над сайтом";
+    }
+
+    if (path.indexOf('anomaliesList.html') === -1 || path.indexOf('main.html') === -1 || path.indexOf('develop.html') === -1) {
+        let bfuMas = [];
+        bfuFinder(infiniteNameArray, bfuMas);
+        bfuFinder(undefinedNameArray, bfuMas);
+        bfuFinder(limitedNameArray, bfuMas);
+        bfuFinder(nothingnessNameArray, bfuMas);
+        let firstFindArea = document.getElementsByClassName('textImageContainer');
+        console.log(bfuMas[bfuMas.length + 1]);
+        // for (let i = 0; i < firstFindArea.length; i++) {
+        //     let currentArea = firstFindArea[i].getElementsByTagName('p')[0];
+        //     for (let j = 0; j < currentArea.innerText.length - 7; j++) {
+        //         if (currentArea.innerText[j] === "B" && currentArea.innerText[j + 6] === "-"){
+        //             let u = j + 7;
+        //             let tempName = 'B.F.U.-';
+        //
+        //             while (currentArea.innerText[u] !== " " || currentArea.innerText[u] !== "." || currentArea.innerText[u] !== "]" || currentArea.innerText[u] !== ")" || currentArea.innerText[u] !== "█"){
+        //                 tempName += currentArea.innerText[u];
+        //                 u++;
+        //             }
+        //             console.log(tempName);
+        //             for (let u = 0; u < bfuMas.length; u++){
+        //                 if (tempName === bfuMas[u]){
+        //                     currentArea.innerText = currentArea.innerText.slice(0, j) + tempName + currentArea.innerText.slice(j);
+        //                     break;
+        //                 }
+        //             }
+        //             j += tempName.length;
+        //         }
+        //     }
+        // }
     }
 
 });
