@@ -13,17 +13,17 @@ function titleHeaderEdit(pathArray, nameArray, flag) {
     }
 }
 
-function bfuFinder(inputArray, outputArray) {
-    for (let i = 0; i < inputArray.length; i++) {
-        let spaceIndex = inputArray[i].indexOf(' ');
-        let tempAnomalyName = '';
-        for (let j = 0; j < spaceIndex; j++) {
-            tempAnomalyName += inputArray[i][j];
-        }
-        outputArray.push(tempAnomalyName);
-    }
-    console.log(outputArray);
-}
+// function bfuFinder(inputArray, outputArray) {
+//     for (let i = 0; i < inputArray.length; i++) {
+//         let spaceIndex = inputArray[i].indexOf(' ');
+//         let tempAnomalyName = '';
+//         for (let j = 0; j < spaceIndex; j++) {
+//             tempAnomalyName += inputArray[i][j];
+//         }
+//         outputArray.push(tempAnomalyName);
+//     }
+//     console.log(outputArray);
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
     let flag = false;
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const nothingnessNameArray = ['B.F.U.-10958 "Задача Танежи"', 'B.F.U.-173 "Гном"'];
 
     const undefinedPathArray = ['Antidemidovich', "boatman", "elevator", "faceDetector"];
-    const undefinedNameArray = ['B.F.U.-003 "Антидемидович"', 'B.F.U.-1952-22.04 "Лодочник"', 'B.F.U.-004 "Лифт"', 'B.F.U.-013 "Распознаватель лиц"'];
+    const undefinedNameArray = ['B.F.U.-003 "Антидемидович на русском языке, ограниченное издание"', 'B.F.U.-1952-22.04 "Лодочник"', 'B.F.U.-004 "Лифт"', 'B.F.U.-013 "Распознаватель лиц"'];
 
     const path = window.location.pathname;
     const elementsArray = document.getElementsByClassName("navBlockBottom");
