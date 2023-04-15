@@ -349,7 +349,7 @@ main {
         margin-bottom: 0;
         transition: max-height 0.7s;
         transition-timing-function: ease-in-out;
-        max-height: 1000px;
+        max-height: 10000px;
 
     }
 
@@ -673,7 +673,7 @@ main {
         margin-bottom: 0;
         transition: max-height 0.7s;
         transition-timing-function: ease-in-out;
-        max-height: 1000px;
+        max-height: 10000px;
 
     }
 
@@ -1050,7 +1050,7 @@ main {
         margin-bottom: 0;
         transition: max-height 0.7s;
         transition-timing-function: ease-in-out;
-        max-height: 1000px;
+        max-height: 10000px;
 
     }
 
